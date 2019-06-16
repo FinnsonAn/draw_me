@@ -1,0 +1,78 @@
+{template '_header'}
+<style>
+    .spec_item_thumb {position: relative;width: 30px;height: 20px;padding: 0;border-left: none;}
+    .spec_item_thumb img{cursor: pointer;}
+</style>
+<div class="page-heading">
+	<span class='pull-right'>
+		{ifp 'case.product.add'}
+			<a class="btn btn-primary btn-sm" href="{php echo webUrl('case/product/add')}">添加新作品</a>
+		{/if}
+		<a class="btn btn-default  btn-sm" href="{php echo webUrl('case/product')}">返回列表</a>
+	</span>
+	<h2>{if !empty($item['id'])}编辑{else}添加{/if}作品
+    </h2>
+</div>
+<div class="alert alert-danger">注意：为保证数据的准确性，作品类型跟活动类型保存后将不可更改，请谨慎选择。</div>
+    <form id="dataform" action="" method="post" class="form-horizontal form-validate">
+        <input type='hidden' id='tab' name='tab' value="{$_GPC['tab']}" />
+       <ul class="nav nav-arrow-next nav-tabs" id="myTab">
+            <li {if $_GPC['tab']=='basic' || empty($_GPC['tab'])}class="active"{/if} ><a href="#tab_basic">基本</a></li>
+            <li {if $_GPC['tab']=='param'}class="active"{/if}><a href="#tab_option">参数</a></li>
+            <li {if $_GPC['tab']=='content'}class="active"{/if}><a href="#tab_notice">详情</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane {if $_GPC['tab']=='basic' || empty($_GPC['tab'])}active{/if}" id="tab_basic">{template 'case/product/basic'}</div>
+            <div class="tab-pane {if $_GPC['tab']=='param'}active{/if}" id="tab_option">{template 'case/product/param'}</div>
+            <div class="tab-pane {if $_GPC['tab']=='content'}active{/if}" id="tab_notice">{template 'case/product/content'}</div>
+        </div>
+        <div class="form-group-title"></div>
+        <div class="form-group"></div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label"></label>
+            <div class="col-sm-9 col-xs-12">
+                {ife 'case.product' $item}
+                    <input type="submit"  value="提交" class="btn btn-primary pull-right" />
+                {/if}
+            </div>
+        </div>
+ </form>
+<script language='javascript'>
+    require(['bootstrap'],function(){
+        $('#myTab a').click(function (e) {
+            e.preventDefault();
+            $('#tab').val( $(this).attr('href'));
+            $(this).tab('show');
+        })
+    });
+</script>
+
+
+
+
+        <script type="text/javascript">
+            //  new script
+            $(function () {
+                require(['bootstrap'],function(){
+                    $('#myTab a').click(function (e) {
+                        e.preventDefault();
+                        $('#tab').val( $(this).attr('href'));
+                        $(this).tab('show');
+                    })
+                });
+
+                $("input[name='goodstype']").unbind('click').click(function () {
+                    var val = $(this).val();
+                    if(parseInt(val)>0){
+                        $("#hasoption-goup").hide();
+                    }else{
+                        $("#hasoption-goup").show();
+                    }
+                    $(".cgt").hide();
+                    $(".cgt-"+val).show();
+                });
+            })
+        </script>
+ 
+{template '_footer'}
+ 

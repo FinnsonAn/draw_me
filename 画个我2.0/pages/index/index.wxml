@@ -1,0 +1,66 @@
+<!--index.wxml-->
+
+<button class="kf_button" open-type="contact" session-from="weapp">
+    <image class="kf_image" src="../../resource/images/kf.png"></image>
+</button>
+<view class="container">
+  <scroll-view class="scroll-view" scroll-y="false" bindscroll="scrollTo" bindscrolltolower="pullDownRefresh">
+    <view class="swiper-box" >
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="5000" duration="1200" indicator-active-color="#333" indicator-color="#ccc"  circular="true">
+        <swiper-item wx:for="{{slides}}" wx:key="{{index}}">
+    <image src="{{item.thumb}}" mode="widthFix" lazy-load="true" bindtap="toPage" data-link="{{item.link}}"/>  
+        </swiper-item>
+      </swiper>
+    </view>
+    
+
+    <scroll-view scroll-x class="{{classname}}"  scroll-with-animation>
+      <block wx:for="{{cates}}">
+      <view class="{{item.id == curCid ? 'selected' : ''}}" data-id="{{item.id}}" bindtap='changeCate'>{{item.name}}</view>
+      </block>
+    </scroll-view>
+    <view class='adver' bindtap='toDetail' wx:if="{{rmd.id > 0}}" data-id="{{rmd.id}}">
+      <view class='left'>
+        <image src="{{rmd.thumb}}"/>  
+      </view>
+      <view class='r-box'>
+        <text>{{rmd.title}}</text>
+        <span>{{rmd.subtitle}}</span>
+        <view class='price'><i>{{rmd.price}}</i>元</view>
+        <view class='bq' wx:if="{{rmd.label}}">{{rmd.label}}</view>
+      </view>
+    </view>
+
+    <view class='list-box' >
+    <block wx:for="{{goodslist}}" wx:for-item="goods">
+      <view class='pain'  bindtap='toDetail' data-id="{{goods.id}}">
+        <view class='label hot' wx:if="{{goods.ishot == 1}}">热卖</view>
+        <view class='label new' wx:if="{{goods.isnew == 1}}">新风格</view>
+        <image src='{{goods.thumb}}'></image>
+        <view class='subtit' wx:if="{{goods.subtitle!=''}}">{{goods.subtitle}}</view>
+        <view class='title'>{{goods.title}}</view>
+        <view class='price'>
+          <text>¥{{goods.price}}</text>
+          <span>{{goods.sales}}人购买</span>
+        </view>
+      </view>
+    </block>
+    </view>
+  </scroll-view>  
+</view>
+
+<!--授权界面-->
+  <view class='empower' hidden='{{empowerBox}}'>
+     <view class="main">
+ 
+      <view class='conbox'>
+        <view class='infos'>
+          <view class='h1'>点击允许获取头像</view>
+          <view class='h2'>开始在线帮你画头像</view>
+        </view>
+        <view class="fot">
+         <button  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" plain="true">确定</button>
+        </view>
+      </view>  
+    </view>
+  </view>

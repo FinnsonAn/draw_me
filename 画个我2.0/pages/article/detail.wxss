@@ -1,0 +1,25 @@
+/* detail.wxss */
+.detail-box{
+  background-color: #fff;padding: 10px; height: 100%;
+}
+.detail-box .title{
+  text-align: center;font-size: 18px;font-weight: bold;
+  line-height: 30px;
+}
+.detail-box .name-time{
+  padding: 0 5px;
+  height: 25px; border-bottom: 1px solid #eee;font-size: 12px;
+  color: #999;line-height: 25px;margin-top: 10px;
+}
+.detail-box .name-time text{
+  float: left;display: block;
+}
+.detail-box .name-time p{
+  float: right;display: block;
+}
+.datail{
+  font-size: 14px;line-height: 25px; width: 96%; margin: 0 auto; 
+  padding-top: 10px; padding-bottom: 10px;
+}
+.datail image{ text-align: center;  }
+.datail .img{  margin: 0 auto; width:100%;}

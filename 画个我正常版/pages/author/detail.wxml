@@ -1,0 +1,60 @@
+<!--detail.wxml-->
+<view class="container">
+  <scroll-view class="scroll-view" scroll-y="false">
+    <view class="orderviewpage">
+      <view class="item oinfo">
+        <p>{{ordername}}编号：<span>{{order.ordersn}}</span></p>
+        <p>下单时间：<span>{{order.createtime_format}}</span></p>
+        <p>{{ordername}}状态：<span class="rd">{{order.statusstr}}</span></p>
+	    </view>
+
+      <view class="item pro clearfix">
+      <block wx:for="{{order.goods}}" wx:for-item="g">
+        <view class="ler">
+          <view class="img"><image src="{{g.thumb}}"/></view>
+          <view class="info">
+				    <p>{{g.title}}</p>
+				    <p>
+              <span>{{g.optiontitle}}</span>
+              <span wx:if="{{order.person > 1}}">{{order.pictype_str}}</span>
+            </p>
+			    </view>
+          <view class="price">
+				    <span>{{order.person}}人</span>
+				    <p class="gl-pricecolor">￥{{order.price}}</p>
+			    </view>
+        </view>
+      </block>  
+	    </view>
+
+      <view class="item uinfo">
+        <p><i class="fa fa-mobile"></i>{{order.mobile}}</p>
+        <p><i class="fa fa-commenting-o" wx:if="{{order.remark != ''}}"></i>{{order.remark}}</p>
+		    <p>
+        <block wx:for="{{order.upics}}" wx:for-item="pic">
+          <image src="{{pic}}" data-url="{{pic}}"  bindtap="showPic" data-index="{{index}}" class="upic" mode="widthFix"/>
+          </block>
+         </p>
+      </view>
+      
+      <view class="item total" >
+        <view class="tit">上传作品 
+          <span wx:if="{{pics.length > 0}}"><button bindtap='remove'><i class="fa fa-close" /> 清空图片</button></span>
+        </view>
+        <view class='upload'>
+          <view class="picture" wx:if="{{pics}}">
+            <block wx:for="{{pics}}" wx:for-item="pic">
+            <image src="{{pic}}" data-url="{{pic}}"  bindtap="showPic1" class='widthFix'></image>
+            
+            </block>
+          </view>
+          <i class="fa fa-plus-square-o big" bindtap="choosePic"></i>
+        </view>
+	    </view>
+      <view class="acts" wx:if="{{order.status < 3}}">
+        <button bindtap='formSubmit'>提交</button>
+        <button bindtap='toHome' class='default' type='default'>回首页</button>
+      </view>
+    </view>
+  </scroll-view>
+</view>

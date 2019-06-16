@@ -1,0 +1,167 @@
+{template '_header'}
+<div class="page-heading"> 
+	<span class='pull-right'>
+		{ifp 'shop.nav.add'}
+			<a class="btn btn-primary btn-sm" href="{php echo webUrl('shop/nav/add', array('group_id' => $group_id))}">添加新导航</a>
+		{/if}
+		<a class="btn btn-default  btn-sm" href="{php echo webUrl('shop/nav')}">返回列表</a>
+               
+	</span>
+	<h2>{if !empty($item['id'])}编辑{else}添加{/if}导航 <small>{if !empty($item['id'])}修改【{$item['navname']}】{/if}</small></h2> 
+</div>
+ 
+    <form {ife 'shop.nav' $item}action="" method="post"{/if} class="form-horizontal form-validate" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{$item['id']}" />
+ 
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">排序</label>
+                    <div class="col-sm-9 col-xs-12">
+                        {ife 'shop.nav' $item}
+                                <input type="text" name="displayorder" class="form-control" value="{$item['displayorder']}" />
+                                <span class='help-block'>数字越大，排名越靠前</span>
+                        {else}
+                            <div class='form-control-static'>{$item['displayorder']}</div>
+                        {/if}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label must">导航标题</label>
+                    <div class="col-sm-9 col-xs-12 ">
+                         {ife 'shop.nav' $item}
+                        	<input type="text" id='navname' name="navname" class="form-control" value="{$item['navname']}" data-rule-required="true" />
+                         {else}
+                        	<div class='form-control-static'>{$item['navname']}</div>
+                        {/if}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">默认图标</label>
+                    <div class="col-sm-9 col-xs-12">
+                    	{ife 'shop.nav' $item}
+	                        {php echo tpl_form_field_image('icon', $item['icon'])}
+	                        <span class='help-block'>建议尺寸:100 * 100 , 请将所有导航图片尺寸保持一致</span>
+                        {else}
+                            {if !empty($item['icon'])}
+                                  <a href='{php echo tomedia($item['icon'])}' target='_blank'>
+                            		<img src="{php echo tomedia($item['icon'])}" style='width:100px;border:1px solid #ccc;padding:1px' />
+                                  </a>
+                            {/if}
+                        {/if}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">选中图标</label>
+                    <div class="col-sm-9 col-xs-12">
+                    	{ife 'shop.nav' $item}
+	                        {php echo tpl_form_field_image('active_icon', $item['active_icon'])}
+	                        <span class='help-block'>建议尺寸:100 * 100 , 请将所有导航图片尺寸保持一致</span>
+                        {else}
+                            {if !empty($item['icon'])}
+                                  <a href='{php echo tomedia($item['active_icon'])}' target='_blank'>
+                            		<img src="{php echo tomedia($item['active_icon'])}" style='width:100px;border:1px solid #ccc;padding:1px' />
+                                  </a>
+                            {/if}
+                        {/if}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label must">所属导航组</label>
+                    <div class="col-sm-9 col-xs-12">
+                        <select class="form-control" name="group_id" id="group_id">
+                            <option value="">请选择</option>
+                            {loop $groups $v}
+                            <option value="{$v['gid']}"{if $item['group_id']==$v['gid'] || $group_id==$v['gid']} selected=""{/if}>{$v['title']}{if $v['size']}({$v['size']}){/if}</option>
+                            {/loop}
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label must">关联的数据类型</label>
+                    <div class="col-sm-9 col-xs-12">
+                        <select class="form-control" name="data_type" id="data_type">
+                            <option value="">请选择</option>
+                            {loop $dataTypes $k $v}
+                            <option value="{$k}"{if $item['data_type']==$k} selected=""{/if}>{$v}</option>
+                            {/loop}
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">样式名称</label>
+                    <div class="col-sm-9 col-xs-12 ">
+                         {ife 'shop.nav' $item}
+                        	<input type="text" id='classname' name="classname" class="form-control" value="{$item['classname']}" />
+                         {else}
+                        	<div class='form-control-static'>{$item['classname']}</div>
+                        {/if}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">导航链接</label>
+                    <div class="col-sm-9 col-xs-12">
+                         {ife 'shop.nav' $item}
+	                        <div class="input-group form-group" style="margin: 0;">
+								<input type="text" value="{$item['url']}" class="form-control valid" name="url" placeholder="" id="navlink">
+								<span data-input="#navlink" data-toggle="selectUrl" class="input-group-addon btn btn-default">选择链接</span>
+							</div>
+                        {else}
+                        	<div class='form-control-static'>{$item['url']}</div>
+                        {/if}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">tabBar页面</label>
+                    <div class="col-sm-9 col-xs-12">
+                    	{ife 'shop.nav' $item}
+	                        <label class='radio-inline'>
+	                            <input type='radio' name='istab' value='1' {if $item['istab']==1}checked{/if} /> 是
+	                        </label>
+	                        <label class='radio-inline'>
+	                            <input type='radio' name='istab' value='0' {if $item['istab']==0}checked{/if} /> 否
+	                        </label>
+                            <span class='help-block'>针对于小程序而言</span>
+	                    {else}
+                            <div class='form-control-static'>{if empty($item['istab'])}是{else}否{/if}</div>
+                        {/if}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">状态</label>
+                    <div class="col-sm-9 col-xs-12">
+                    	{ife 'shop.nav' $item}
+	                        <label class='radio-inline'>
+	                            <input type='radio' name='status' value=1' {if $item['status']==1}checked{/if} /> 显示
+	                        </label>
+	                        <label class='radio-inline'>
+	                            <input type='radio' name='status' value=0' {if $item['status']==0}checked{/if} /> 隐藏
+	                        </label>
+	                    {else}
+                            <div class='form-control-static'>{if empty($item['status'])}隐藏{else}显示{/if}</div>
+                        {/if}
+                    </div>
+                </div>
+            
+            <div class="form-group">
+                    <label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-9 col-xs-12">
+                    	{ife 'shop.nav' $item}
+                    		<input type="submit" value="提交" class="btn btn-primary"  />
+                    	{/if}
+                       <input type="button" name="back" onclick='history.back()' {ifp 'shop.nav.add|shop.nav.edit'}style='margin-left:10px;'{/if} value="返回列表" class="btn btn-default" />
+                    </div>
+            </div>
+ 
+    </form>
+ 
+
+<script language='javascript'>
+    function formcheck() {
+        if ($("#navname").isEmpty()) {
+            Tip.focus("navname", "请填写导航名称!");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+{template '_footer'}

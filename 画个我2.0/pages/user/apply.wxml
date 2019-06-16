@@ -1,0 +1,43 @@
+<!--pages/user/apply.wxml-->
+<view class="container">
+  <scroll-view class="scroll-view" scroll-y="false">
+    <view class='banner'>
+      <image src='/resource/images/banner-1.jpg'></image>
+    </view>
+    <view class='inp'>
+      <text>姓名</text>
+      <input></input>
+    </view>
+    <view class='inp'>
+      <text>电话</text>
+      <input></input>
+    </view>
+    <view class='inp'>
+      <text>微信</text>
+      <input></input>
+    </view>
+    <view class='inp'>
+      <text>微博（选填）</text>
+      <input></input>
+    </view>
+    <view class='inp'>
+      <text>作品链接（选填）</text>
+      <input></input>
+    </view>
+    <view class='upload'>
+      <text>上传满意作品审核（至少上传一张）</text>
+      <view class='w-list'>
+        <view>
+          <image src='/resource/images/banner-1.jpg'></image>
+        </view>
+        <view>
+          <image src='/resource/images/up_bg.jpg'></image>
+        </view>
+      </view>
+      
+    </view>  
+    <view class='up_but'>
+        <button>提交</button>
+      </view>
+  </scroll-view>  
+</view>

@@ -1,0 +1,116 @@
+/* pages/goods/go_buy.wxss */
+.banner_buy{width: 100%;height: auto;}
+.banner_buy image{width: 100%;height:750rpx;}
+.box_t{width: 100%;height: 100rpx;}
+.box_t .st{
+  width: 33%;height: 100rpx;float: left;text-align: center;padding-bottom: 10rpx;
+}
+.box_t .st image{
+  width: 80rpx;height: 80rpx;border-radius: 50%;display: inline-block;margin-top: 10rpx;
+}
+.box_t .st .wz{
+  display: inline-block;margin-left: 10rpx;height: 80rpx;
+}
+.box_t .st .wz text{
+  display: block;font-size: 14px;color: #333;height: 50rpx;line-height: 50rpx;
+}
+.tdp{
+  width: 100%;height: auto;background-color: #fff;margin-top: 10rpx;display: table;border-bottom: 1px solid #ddd;
+}
+.tdp .title{
+  width: 90%;margin: 15px auto 10px;line-height: 50rpx;text-align: center;font-size: 18px;font-weight: bold;color: #333;
+}
+.tdp .detail{
+  width: 90%;margin: 0 auto;line-height: 50rpx;text-align: center;font-size: 14px;color: #999;
+}
+.tdp .price{
+  width: 90%;margin: 0 auto;line-height: 100rpx;text-align: center;font-size: 16px;font-weight: bold;color: #ff000b;
+}
+.shop_o{
+  width: 100%;background-color: #fff;border-bottom: 1px solid #ddd;height: 45px;line-height: 45px;font-size: 14px; color: #333;
+}
+.shop_o text{
+  float: left;margin-left: 10px;
+}
+.shop_o span{
+  float: right;margin-right: 10px;
+}
+.shop_o view{
+  float: right;margin-right: 10px;color: #999;
+}
+.shop_o view i{
+  float: left;margin-left: 10rpx;line-height: 45px;
+}
+.shop_o view i.co{
+  color: #feea17;
+}
+.shop_detail{
+  width: 100%;height: auto;
+}
+.shop_detail .title{
+  width: 100%;height: auto;display: table;text-align: center;background-color: #fff;padding-top: 20px;
+}
+.shop_detail .title view{
+  display: inline-block;height: 50px;line-height: 50px;margin: 0 10px;color: #999;font-size: 16px;font-weight: bold;
+}
+.shop_detail .title view.select{
+  color: #333;border-bottom: 2px solid #333;
+}
+.shop_detail .detail{
+  padding-top: 10px;width: 100%;height: auto;background-color: #fff;
+}
+.shop_detail .comments{
+  width: 100%;height: auto;
+}
+.shop_detail .comments .clist{
+  width: 100%;height: auto;background-color: #fff;margin-bottom: 10px; border-bottom:  1px #eee solid;
+}
+.shop_detail .comments .clist .top{
+  width: 100%;height: 50px;line-height: 50px;
+}
+.shop_detail .comments .clist .top image{
+  width: 30px;height: 30px;float: left;margin-left: 10px;border-radius: 50%;margin-top: 10px;
+}
+.shop_detail .comments .clist .top text{
+  float: left;margin-left: 10px;font-size: 14px;font-weight: bold;color: #333;
+}
+.shop_detail .comments .clist .top view{
+  float: right;margin-right: 10px;
+}
+.shop_detail .comments .clist .top view i{
+  float: left;margin-left: 10rpx;line-height: 50px;
+}
+.shop_detail .comments .clist .top view i.co{
+  color: #feea17;
+}
+.shop_detail .comments .clist .date{
+  width: 100%;height: 40px;line-height: 40px;
+}
+.shop_detail .comments .clist .date text{
+  float: left;margin-left: 10px;color: #999;font-size: 14px;
+}
+.shop_detail .comments .clist .content{
+  width: auto;height: auto;line-height: 26px;padding: 5px; font-size: 14px;    margin-left: 5px; margin-right: 5px;
+}
+.shop_detail .comments .clist .img{
+  width: 100%;height: 300rpx;margin-left: 10px;margin-top: 10px;
+}
+.shop_detail .comments .clist .img image{
+  width: 260rpx;height: 260rpx;margin-right: 10px;float: left;
+}
+.shop_detail .gc{
+  width: 100%; font-size: 14px; margin: 0 auto; 
+  min-height: 500px;
+}
+.shop_detail .gc .p{
+   padding-left:10px; padding-right: 10px;
+}
+.shop_detail .gc image{
+  width:100%; height: auto; padding: 0; margin: 0; display: block; clear: both;
+}
+.kg{
+  width: 100%;height: 60px;background-color: #fff;
+}
+.go_buy{
+  width: 100%;height: 60px;background-color: #7344dc;color: #fff;text-align: center; line-height: 60px;position: fixed;bottom: 0; font-weight: bold; font-size: 18px;
+}

@@ -1,0 +1,45 @@
+<!--list.wxml-->
+<view class="container">
+  <scroll-view class="scroll-view" scroll-y="false" bindscrolltolower="pullDownRefresh">
+    <view class="tab"> 
+      <view><b class="{{status == -2 ? 'sel' : ''}}" bindtap="toOrderlist" data-status="-2">全部</b></view>
+      <view><b class="{{status == 2 ? 'sel' : ''}}" bindtap="toOrderlist" data-status="2">待收图</b></view>
+      <view><b class="{{status == 3 ? 'sel' : ''}}" bindtap="toOrderlist" data-status="3">待评价</b></view>
+      <view><b class="{{status == 4 ? 'sel' : ''}}" bindtap="toOrderlist" data-status="4">已完成</b></view>
+
+    </view>
+  <block wx:if="{{list}}">
+    <view class="orderlist">
+    <block wx:for="{{list}}" wx:for-item="order">  
+      <view class="item" >
+        <view class="tit" bindtap="toOrderView" data-id="{{order.id}}">{{ordername}}编号：{{order.ordersn}}</view>
+        <block wx:for="{{order.goods}}" wx:for-item="g">
+        <view class="ler" wx:if="{{index == 0}}"  bindtap="toOrderView" data-id="{{order.id}}">
+          <view class="img"><image src="{{g.thumb}}" /></view>
+          <view class="info">
+            <p>{{g.title}}</p>
+            <span>{{g.optiontitle}}</span>
+          </view>
+          <view class="price">
+            <p>￥{{g.price}}</p>
+            <span>x{{g.total}}</span>
+          </view>
+        </view>
+        </block>
+        <view class="allprice">总额：<span class="gl-pricecolor">￥{{order.price}}</span>
+          <button type="default" plain="false" wx:if="{{order.op.cancel}}" bindtap="cancel" data-id="{{order.id}}" data-index="{{index}}" class="warn">取消</button>
+          <button type="default" plain="false" wx:if="{{order.op.remove}}" bindtap="remove" data-id="{{order.id}}" data-index="{{index}}"  class="warn">删除</button>
+          <button type="default" plain="false" wx:if="{{order.op.pay}}" bindtap="pay" data-id="{{order.id}}">付款</button>
+          <button type="default" plain="false" wx:if="{{order.op.receive}}" bindtap="receive" data-id="{{order.id}}" data-index="{{index}}">收货</button>
+          <button type="default" plain="false" wx:if="{{order.status>=2}}" bindtap="comment" data-id="{{order.id}}">作品</button>
+        </view>
+      </view>
+    </block>
+    </view>
+  </block>
+  <block wx:if="{{listLength == 0}}">
+    <import src="/pages/templates/empty.wxml" />
+    <template is="empty" data="{{emptyMsg}}"/>
+  </block>
+  </scroll-view>
+</view>

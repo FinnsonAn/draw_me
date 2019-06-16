@@ -1,0 +1,85 @@
+<!--pages/goods/go_buy.wxml-->
+<view class="container">
+  <scroll-view class="scroll-view" scroll-y="false" bindscrolltolower="pullDownRefresh" >
+    <view class="swiper-box" style='height:750rpx;'>
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="3000" duration="1200"
+        indicator-active-color="#f38daa" indicator-color="#ccc">
+        <swiper-item wx:for="{{thumbs}}">
+          <image mode="widthFix" src="{{item}}" />
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class='box_t'>
+      <view class='st' wx:for="{{labels}}">
+        <image src='{{item.thumb}}'></image>
+        <view class='wz'>
+          <text>{{item.title}}</text>
+          <text>{{item.assistant_title}}</text>
+        </view>
+      </view>
+    </view>  
+    <view class='tdp'>
+      <view class='title'>{{goods.title}}</view>
+      <view class='detail'>{{goods.subtitle}}</view>
+      <view class='price'><span wx:if="{{goods.isdiscount == 1}}">促销价</span> ¥{{goods.price}}</view>
+    </view>
+    <view class='params' wx:if="{{params}}">
+      <view class='shop_o' wx:for="{{params}}" wx:for-item="param">
+        <text>{{param.title}}</text>
+        <block wx:if="{{param.title == '相似指数'}}">
+        <view>
+          <block wx:for="{{goods.stars}}" wx:for-index="star">
+          <i class="fa fa-star {{param.value > star ? 'co' : ''}}"></i>
+          </block>
+        </view>
+        </block>
+        <block wx:else>
+        <span>{{param.value}}</span>
+        </block>
+      </view>
+    </view>
+    
+
+    <view class='shop_detail'>
+      <view class='title'>
+        <view class="{{tabtype == 1 ? 'select' : ''}}" bindtap="changeTab" data-t="1">手绘详情</view>
+        <view class="{{tabtype == 2 ? 'select' : ''}}" bindtap="changeTab" data-t="2">用户评价（{{comment_total}}）</view>
+      </view>
+      <view class="gc"  hidden='{{tabtype == 2 ? true : false}}'>
+        <import src="/pages/templates/content.wxml" />
+        <template is="content" data="{{...goods}}" />
+      </view>
+      <view class='comments' hidden='{{tabtype == 1 ? true : false}}'>
+        <scroll-view class="scroll-view"  scroll-y="false" bindscrolltolower="pullDownRefresh" wx:if="{{comments.length>0}}">
+        <view class='clist' wx:for="{{comments}}" wx:for-item="cmt" wx:for-index="cindex">
+          <view class='top'>
+            <image src='{{cmt.headimgurl}}'></image>
+            <text>{{cmt.nickname}}</text>
+            <view>
+              <i class="fa fa-star co" wx:for="{{cmt.level_arr}}"></i>
+            </view>
+          </view>
+          <view class='date'>
+            <text>{{cmt.goods}}</text>
+            <text>{{cmt.date}}</text>
+          </view>
+          <view class='content'>
+            {{cmt.content}}
+          </view>
+          <view class='img'  wx:if="{{cmt.images}}">
+            <block wx:for="{{cmt.images}}" wx:for-item="pic" >
+            <image src="{{pic}}" data-url="{{pic}}"  bindtap="showCommentPic" data-index="{{cindex}}"/>
+            </block>
+          </view>
+        </view>
+        </scroll-view> 
+        <view wx:if="{{comments.length==0}}" class="empty1">没有评论</view>
+      </view> 
+    </view>
+    <view class='kg'></view>
+    <view class='go_buy' bindtap='buy' wx:if="{{paybtn==1}}">
+      我要画这个
+      <i class="fa fa-hand-pointer-o"></i>
+    </view>
+  </scroll-view>  
+</view>

@@ -1,0 +1,116 @@
+.kf_button{
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 9999;
+  border: 0px;
+  height: 100rpx;
+  right: 0;
+  bottom: 20rpx;
+  position: fixed;
+}
+.kf_button::after{
+  border: 0px;
+}
+.kf_image{
+  z-index: 9998;
+  width: 100rpx;
+  height: 100rpx;
+}
+.sea-box{
+  width: 100%;height:auto;position: relative; 
+}
+.cates{
+  width: auto;height: 130rpx; border-bottom: 1px solid #ddd;background-color: #fff; display: flex; white-space: nowrap; overflow-x: scroll; min-width: 750rpx;
+}
+.cates view{
+  line-height: 125rpx;font-size: 20px;padding: 0 25px 0 10px; color: #333333; display: inline-block; 
+}
+.cates view.selected{
+  font-size: 23px;color: #9908b68f;font-weight: bold;border-bottom: 6px #940de2d0 solid; 
+}
+.adver{
+  width: 100%;height: auto;display: table;background: #fff;border-bottom: 1px solid #ddd;
+}
+.adver .left{
+  float: left;padding: 20rpx 50rpx 20rpx 50rpx;width:260rpx;height: auto;
+}
+.adver .left image{
+  width:300rpx;height: 300rpx;
+}
+.adver .r-box{
+  float: left;width: 340rpx;position: relative;margin-top: 50px
+}
+.adver .r-box text{
+  display: block;font-size: 18px;color: #333;font-weight: bold;
+}
+.adver .r-box text{
+  display: block;font-size: 18px;color: #333;font-weight: bold;width: 100%;height: 25px;line-height: 25px;overflow: hidden;
+}
+.adver .r-box span{
+  display: block;font-size: 16px;color: #777;width: 100%;height: 25px;line-height: 25px;overflow: hidden;
+}
+.adver .r-box .price{
+  font-size: 16px;color: #777;width: 100%;height: 25px;line-height: 25px;overflow: hidden;
+}
+.adver .r-box .price i{
+  color: #e54b4d;
+}
+.adver .r-box .bq{
+  position: absolute;background-color: #ff9900;color: #fff;border-radius: 15px;padding: 0 10px;height: 25px;line-height: 25px;font-size: 14px;top: -35px;right: -10px;
+}
+.list-box{
+  width: 100%;height: auto;background-color: #fff;display: table;padding-bottom: 20rpx;
+}
+.list-box .pain{
+  width: 345rpx;height: auto;margin-left: 20rpx;box-shadow: 3px 3px 3px #ddd;margin-top: 20rpx;float: left;position: relative;
+}
+.list-box .pain .label{
+  position: absolute;height: 25px; color: #fff;border-radius: 13px;padding: 0 10px;top: 10px;right: 10px;font-size: 14px;line-height: 25px;
+}
+.list-box .pain .hot{
+  background-color: #fc2222d7;
+}
+.list-box .pain .new{
+  background-color: #f52397a8;
+}
+.list-box .pain image{
+  width: 345rpx;height: 345rpx;
+}
+.list-box .pain .subtit{
+  height: 25px;background-color: #a50fca46;color: #ffffff;line-height: 25px;text-align: center; overflow: hidden;  font-size: 13px; position: absolute; z-index: 100; bottom: 60px; width: 100%; 
+}
+.list-box .pain .title{
+  font-size: 17px;font-weight:bold; height: 36px;line-height: 46px;width: 94%;margin: 0 auto;overflow: hidden; color: #272727; margin-top: 10px;
+}
+.list-box .pain .price{
+  width: 94%;margin: 0 auto;overflow: hidden;height: 30px;line-height: 30px;
+}
+.list-box .pain .price text{
+  float: left;color: #e54b4d;font-size: 16px;
+}
+.list-box .pain .price span{
+  float: right;color: #c6c6c6;font-size: 14px;
+}
+
+.empower{ 
+  height: 100vh; width: 100%;  position: fixed; background-color:rgba(0,0,0,0.5); z-index: 200; bottom: 0px;}
+.empower .main{ 
+  height: 140px;background: #fff; padding: 20rpx; padding-bottom: 0px; z-index: 210; width: 460rpx; margin: 0 auto;  margin-top: 400rpx; border-radius: 10px; position: relative;}
+.empower .main .conbox{
+  width: 100%;margin: 0 auto; background-color: #fff;display: table; height: 120px;border-radius: 5px; font-size: 16px;  
+}
+.empower .main .closed{ position: absolute; z-index: 200; right: -5px; top: -5px;}
+.empower .main .closed image{ width: 30px; height: 30px; }
+.conbox .infos{ padding-top: 10px; padding-bottom: 10px;}
+.conbox .infos .h1{ width: 90%; margin: 0 auto; font-size: 17px; color: #000; line-height: 30px; text-align: center;}
+.conbox .infos .h2{ width: 90%; margin: 0 auto; font-size: 17px;  color: #000; line-height: 30px; text-align: center;}
+.conbox .fot{ 
+  width: 100%; margin: 0 auto; border-top: 1px #eee solid; margin-top: 5px;
+}
+.conbox .fot .left{ width: 49%; float: left; border-right: 1px #eee solid; height: 40px; line-height: 40px;}
+.conbox .fot .left button{
+  width: 100%; color: #000; font-size: 20px; text-align: center; line-height: 40px; background: #fff; border: 0px;
+}
+.conbox .fot{ width: 100%;  height: 40px; line-height: 40px; text-align: center;}
+.conbox .fot button{
+  width: 100%; color: limegreen; font-size: 18px; text-align: center; line-height: 50px; background: #fff; border: 0px; word-spacing:30px;
+}

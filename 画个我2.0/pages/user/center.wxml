@@ -1,0 +1,44 @@
+<!--pages/user/center.wxml-->
+
+<view class="container">
+  <scroll-view class="scroll-view" scroll-y="false">
+    <view class='users'>
+      <view class='toper'>
+        <image src="{{user.avatar}}" />
+        <text>{{user.nickname ? user.nickname : '昵称'}}</text>
+        <!--<i class="fa fa-angle-right"></i>-->
+      </view>
+      <view class='menus'>
+      <block wx:for="{{userNavs}}">
+
+        <view class='list' wx:if="{{item.url == 'service'}}">
+          <button open-type="contact"  plain="true"></button>
+          <image src='{{item.icon}}' ></image>
+          <text>{{item.navname}}</text>
+          <i class="fa fa-angle-right"></i>
+        </view>
+
+        <view class='list' wx:elif="{{item.url == 'share'}}">
+          <button open-type="share"  plain="true"></button>
+          <image src='{{item.icon}}' ></image>
+          <text>{{item.navname}}</text>
+          <i class="fa fa-angle-right"></i>
+        </view>
+        <block wx:elif="{{item.url == 'author'}}">
+        <view class='list' bindtap="toNext" data-url="/pages/author/list"  wx:if="{{user.authorid > 0}}">
+          <image src='{{item.icon}}' ></image>
+          <text>{{item.navname}}</text>
+          <i class="fa fa-angle-right"></i>
+        </view>
+        </block>
+        <view class='list' bindtap="toNext" data-url="{{item.url}}" data-istab="{{item.istab}}" wx:else>
+          <image src='{{item.icon}}' ></image>
+          <text>{{item.navname}}</text>
+          <i class="fa fa-angle-right"></i>
+        </view>
+
+      </block>
+      </view>
+    </view>
+  </scroll-view>  
+</view>

@@ -1,0 +1,34 @@
+<!--pages/goods/eval.wxml-->
+<view class="container">
+<form bindsubmit="formSubmit">  
+    <view class='top_b'>
+      <view class='img'>
+        <image src='{{avatar}}'></image>
+      </view>
+      <view class='but'>
+        <button class='btn1' plain='true' bindtap='download'>保存作品</button>
+      </view>
+      <view  class='but'>
+        <button class='btn2' plain='true' open-type="share">分享一下</button>
+      </view>
+    </view>
+    <view class='bot_b' wx:if="{{order.iscomment == 0}}">
+      <view class='top'>
+        <view class='lt'><b>评价</b></view>
+        <view>
+          <block wx:for="{{stars}}" wx:for-item="star">
+              <i class="fa {{level >= star.i ? 'fa-star co' : 'fa-star-o'}}" data-level="{{star.i}}" data-desc="{{star.desc}}" bindtap="level"></i>
+          </block>
+        </view>
+        <span>{{leveldesc}}</span>
+      </view>
+      <view class='e_l'>
+        <input name="comment" value='' placeholder='这里输入评论内容' ></input>
+      </view>
+      <view>
+        <button form-type="submit">提交</button>
+      </view>
+    </view>
+</form>  
+</view>
+

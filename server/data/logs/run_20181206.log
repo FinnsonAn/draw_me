@@ -1,0 +1,130 @@
+[2018-12-06 00:09:40] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-6e16531f9031e6a9ac9bacf426a9d0b1&sign=c224b28ad54df427bf40b67180218531 op=order; orderid=21884; pn=upload; 
+上传
+[2018-12-06 00:16:07] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-ddca36dda95712961f34fa6330bf6ede&sign=fbc0314755ee4763a8f713b2aa6d62b3 pn=upload; op=order; orderid=21885; 
+上传
+[2018-12-06 00:23:49] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-6a8d8cfeac20e048d8cc2853c9171f75&sign=2bb8cd89b120c210d6df94627c8c28d3 pn=upload; op=order; orderid=21886; 
+上传
+[2018-12-06 00:41:00] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-fb478d5ad4ae06a295aca50ed4c16e8b&sign=4987c0eee1ffd4007990c1b01f7cbea7 pn=upload; op=order; orderid=21887; 
+上传
+[2018-12-06 00:50:19] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-8c63b8c4bcd1b67e931f507d7d5aab44&sign=9b6ca7930a8932af6131feda29d759ea pn=upload; op=order; orderid=21888; 
+上传
+[2018-12-06 01:11:53] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-cb7d0a50ad7ad65a30aa3b9ad0cac28d&sign=59cac6b7cadb8e22eb5386694748c805 pn=upload; op=order; orderid=21889; 
+上传
+[2018-12-06 01:12:18] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-cb7d0a50ad7ad65a30aa3b9ad0cac28d&sign=59cac6b7cadb8e22eb5386694748c805 pn=upload; op=order; orderid=21890; 
+上传
+[2018-12-06 07:03:32] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-4aa239c48e280458a22275d71cb7a102&sign=4f557e944fe6fa25340a0d84500f553e pn=upload; op=order; orderid=21891; 
+上传
+[2018-12-06 08:50:45] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-45329f65db1fb18d1053012299114e9f&sign=b7234114eb3a4161277096253448a218 op=order; orderid=21892; pn=upload; 
+上传
+[2018-12-06 09:41:50] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-f459afe664ad69b6fef42ea8b45085f2&sign=005f9a044896cef3a89e8313dc86992b op=order; orderid=21893; pn=upload; 
+上传
+[2018-12-06 10:33:10] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-0dd8c3707970c99ec0c646fe4c36cce3&sign=4417d8c331d5c3c3aabf2f825f79ae98 op=order; orderid=21894; pn=upload; 
+上传
+[2018-12-06 10:35:42] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-0dd8c3707970c99ec0c646fe4c36cce3&sign=4417d8c331d5c3c3aabf2f825f79ae98 op=order; orderid=21895; pn=upload; 
+上传
+[2018-12-06 10:35:42] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-0dd8c3707970c99ec0c646fe4c36cce3&sign=4417d8c331d5c3c3aabf2f825f79ae98 op=order; orderid=21895; pn=upload; 
+上传
+[2018-12-06 10:41:24] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-6de575f1ba5bf488f55a00206257c2f5&sign=e29f40459e210a0c07dc3a694c1e43c4 pn=upload; op=order; orderid=21896; 
+上传
+[2018-12-06 10:44:10] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-6de575f1ba5bf488f55a00206257c2f5&sign=e29f40459e210a0c07dc3a694c1e43c4 pn=upload; op=order; orderid=21897; 
+上传
+[2018-12-06 10:49:24] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-dd0835c49d02845ed73afda1a739783a&sign=7662f1293efad93eab80a4a09d395f9b op=order; orderid=21898; pn=upload; 
+上传
+[2018-12-06 10:54:24] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-cb436f4624c7e8552ea115bd1efe390a&sign=18594e2134a31b78319fcf66b9c06a8e pn=upload; op=order; orderid=21899; 
+上传
+[2018-12-06 10:56:36] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-cb436f4624c7e8552ea115bd1efe390a&sign=18594e2134a31b78319fcf66b9c06a8e pn=upload; op=order; orderid=21900; 
+上传
+[2018-12-06 12:37:57] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-eb20dc192cbfdeb50445e86c7da41e59&sign=c017fbeaf840e92c1f54f1a474c3a144 pn=upload; op=order; orderid=21901; 
+上传
+[2018-12-06 13:27:11] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-bc57f7ef84e88e2a78d0c9b4563bf325&sign=fc64c75c4b629e3df453d3641145a461 pn=upload; op=order; orderid=21902; 
+上传
+[2018-12-06 13:30:22] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-d6370799e19a68eb7b64dbebe170b2fa&sign=d8108e3ac5d51cba3a6c9b968ce25dfb pn=upload; op=order; orderid=21903; 
+上传
+[2018-12-06 13:42:54] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-abc1edc832c0ad904ebcac44295fa591&sign=19ffd22cc451961c45d3264cd43212ac pn=upload; op=order; orderid=21904; 
+上传
+[2018-12-06 13:57:08] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-b982f8b65b8517d5cb6fecf8eb00f827&sign=ae902a9aa5e592cb6b133e8594967cc9 pn=upload; op=order; orderid=21905; 
+上传
+[2018-12-06 13:59:17] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-75521f38ba5840ec9ee6b91e3703b1d9&sign=a56e38212a4262d31f35f0f6252cb929 pn=upload; op=order; orderid=21906; 
+上传
+[2018-12-06 13:59:31] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-75521f38ba5840ec9ee6b91e3703b1d9&sign=a56e38212a4262d31f35f0f6252cb929 pn=upload; op=order; orderid=21907; 
+上传
+[2018-12-06 14:18:17] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-9ec89b133d155e753e5dfd71a1ce101b&sign=afd890f5d1f18b71d876f84adea8676f pn=upload; op=order; orderid=21908; 
+上传
+[2018-12-06 14:24:34] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-3122e8be9008a0094187efb893678f78&sign=83ad46aa9012c134901d7365ba995e07 pn=upload; op=order; orderid=21909; 
+上传
+[2018-12-06 15:22:20] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-429e710d9c791aa79cc84e508decb47f&sign=5b5c49e8156667010c7afeca38abaf5f pn=upload; op=order; orderid=21910; 
+上传
+[2018-12-06 16:34:46] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-594c36a9acc4d8775ce0f6375423e5e0&sign=bae4f41b2eeac90a1570109878c7194c pn=upload; op=order; orderid=21911; 
+上传
+[2018-12-06 16:36:08] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-594c36a9acc4d8775ce0f6375423e5e0&sign=bae4f41b2eeac90a1570109878c7194c pn=upload; op=order; orderid=21912; 
+上传
+[2018-12-06 16:37:29] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-594c36a9acc4d8775ce0f6375423e5e0&sign=bae4f41b2eeac90a1570109878c7194c pn=upload; op=order; orderid=21913; 
+上传
+[2018-12-06 17:27:55] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-fe1784cb969840730d987177e9418d58&sign=376fa26bfbe19da41abbfbc33e1d5d26 pn=upload; op=order; orderid=21914; 
+上传
+[2018-12-06 18:00:39] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-10a2fbc5bc94ea9b7325398049510e00&sign=df2452e81ee59b1c269f624fccfc6b17 op=order; orderid=21915; pn=upload; 
+上传
+[2018-12-06 18:04:14] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-6a59d7f535422394ff2e629904623ff6&sign=c38c129aa22b50448a1524c8ea222366 pn=upload; op=order; orderid=21916; 
+上传
+[2018-12-06 18:07:00] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-8e06001f9200a3135bfafd1d76c97233&sign=a9ed3aa3eb131c5a6e338a708f8e6fe7 op=order; orderid=21917; pn=upload; 
+上传
+[2018-12-06 18:14:14] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-645496ff2f4f681438d42616919c4075&sign=cfc9b8586826f51ee9c45eab5bc62fee pn=upload; op=author; orderid=21673; 
+上传
+[2018-12-06 18:19:10] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-645496ff2f4f681438d42616919c4075&sign=cfc9b8586826f51ee9c45eab5bc62fee pn=upload; op=author; orderid=21685; 
+上传
+[2018-12-06 18:34:06] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-a729eeb3e6a25f4cc3342fdaaa0a2516&sign=5d4ba9447fb1a455e2e80d123d8b8118 pn=upload; op=order; orderid=21918; 
+上传
+[2018-12-06 18:50:16] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-28e0c31d7132633867593b599274fc05&sign=b1e4bd7138d47528508a3cbcad6299d1 pn=upload; op=order; orderid=21919; 
+上传
+[2018-12-06 19:02:33] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-57b7c51194da64a3a6933795e3c75f81&sign=a49cece45a39682cf0e94bbe9a262e29 pn=upload; op=order; orderid=21920; 
+上传
+[2018-12-06 19:06:30] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-645496ff2f4f681438d42616919c4075&sign=cfc9b8586826f51ee9c45eab5bc62fee pn=upload; op=author; orderid=21700; 
+上传
+[2018-12-06 19:37:23] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-e768c4464494a41b051748fdcf3883b1&sign=d363244c79cfb088b29d509c0f00b79c op=order; orderid=21921; pn=upload; 
+上传
+[2018-12-06 19:47:45] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-d5adbe68119c924cc89ef5a800857ce1&sign=f1603c521e465908d0e9a0bd4530ed99 op=order; orderid=21922; pn=upload; 
+上传
+[2018-12-06 19:55:22] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-495acae9a81cff8e7dc17407e6ac86b2&sign=4ed2e24c673179f97d759cfe56d452cf op=order; orderid=21923; pn=upload; 
+上传
+[2018-12-06 19:57:13] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-20abc5a02c9d3c90ecc40403db30ed66&sign=317e125ab064b7bcf1311bb693e3fa8c pn=upload; op=order; orderid=21924; 
+上传
+[2018-12-06 20:22:58] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-359fca3c0e31dcb89d99980e5d4d68fe&sign=e33ef4fe83415afbb2bbcb347e0bae1b pn=upload; op=order; orderid=21925; 
+上传
+[2018-12-06 20:26:25] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-4de8ba4de41f1c9eee846209ee70e509&sign=fbdf194023ed10a44f99004de97a9d24 pn=upload; op=order; orderid=21926; 
+上传
+[2018-12-06 20:36:34] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-b2a313f308ec45d3715d487a0159a282&sign=60a5c7ca20a080afef790aed0470c2d5 pn=upload; op=order; orderid=21927; 
+上传
+[2018-12-06 20:42:54] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-4fd8f04cd14afb645d7a0a50365aa682&sign=ac9fbdda19dd63b2d61bd048841b5546 pn=upload; op=order; orderid=21928; 
+上传
+[2018-12-06 20:43:05] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-4fd8f04cd14afb645d7a0a50365aa682&sign=ac9fbdda19dd63b2d61bd048841b5546 pn=upload; op=order; orderid=21929; 
+上传
+[2018-12-06 21:01:02] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-56ce7e24f5baf208e5d4032bd68a5de5&sign=bf62691097896fbf9301a2c6ac8be699 op=order; orderid=21930; pn=upload; 
+上传
+[2018-12-06 21:01:02] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-56ce7e24f5baf208e5d4032bd68a5de5&sign=bf62691097896fbf9301a2c6ac8be699 op=order; orderid=21930; pn=upload; 
+上传
+[2018-12-06 21:10:21] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-480acc572699793f38c00d363c0d82c1&sign=cbb6b4f84e0a3e59514305114f466e08 pn=upload; op=order; orderid=21931; 
+上传
+[2018-12-06 21:24:22] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-e598493e4019209c570d928547035d0a&sign=13631029f57106928ae1c29ca012f5a4 pn=upload; op=order; orderid=21932; 
+上传
+[2018-12-06 21:45:22] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-f13665d08d69b20858691ca8e0150586&sign=c724e7613043d0ba669556cf74d01144 op=order; orderid=21933; pn=upload; 
+上传
+[2018-12-06 22:03:42] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-851155cec8080773bc4c07d32e6f353b&sign=58ca0ec8d6c5e0edaaced5dd463fd236 pn=upload; op=order; orderid=21934; 
+上传
+[2018-12-06 22:11:47] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-ee3b1f00e81938b2a057e468de2b7e81&sign=b1463264c7dd03c43d25a9c4d7eab606 op=order; orderid=21935; pn=upload; 
+上传
+[2018-12-06 22:12:08] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-ee3b1f00e81938b2a057e468de2b7e81&sign=b1463264c7dd03c43d25a9c4d7eab606 op=order; orderid=21936; pn=upload; 
+上传
+[2018-12-06 22:21:46] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-e7a104ede38e3c465b149a9867a158d8&sign=3a3c325d5a1fab57c260cad174c650a0 pn=upload; op=order; orderid=21937; 
+上传
+[2018-12-06 22:26:57] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-bd07f11608618ed5a340c3388040b048&sign=61baf9b9c8cb0cda7018dea9430dbbd4 op=order; orderid=21938; pn=upload; 
+上传
+[2018-12-06 22:42:44] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-41b505db8d8994123892555854f2bb1a&sign=c6c5c5e1f48cd89c3df8f3163cdced6b pn=upload; op=order; orderid=21939; 
+上传
+[2018-12-06 22:59:56] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-37192c44158d908fed4f09fb9be2f556&sign=ee410cb6de3000c97f0a86e8ec2b1525 op=order; orderid=21940; pn=upload; 
+上传
+[2018-12-06 23:20:34] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-fb91282186c4e96ae3be5fa2ff485405&sign=fb875a71d76442248d7e347c1e59c82e pn=upload; op=order; orderid=21941; 
+上传
+[2018-12-06 23:20:46] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-fb91282186c4e96ae3be5fa2ff485405&sign=fb875a71d76442248d7e347c1e59c82e pn=upload; op=order; orderid=21942; 
+上传
+[2018-12-06 23:26:34] trace  /app/index.php?i=1&uniacid=1&t=undefined&v=1.3&m=ewei_shopv2&from=wxapp&c=entry&a=wxapp&do=main&&state=we7sid-0d6f385a3a04649de529e0d51a33ea71&sign=c8caa63bd8f1868f2c491db1478a82b2 op=order; orderid=21943; pn=upload; 
+上传

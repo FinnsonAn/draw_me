@@ -1,0 +1,114 @@
+.container{
+  width: 100%; height:100vh; background: #eee;  
+}
+.item{
+  margin-bottom: 10rpx;
+  display: block;
+	width: auto;
+	height: auto;
+	position: relative;
+	margin-top: 7px;
+	background: #ffffff;
+}
+.item .tit{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #666666;
+	padding: 0px 10px;
+	padding-top: 5px;
+	border-bottom: 1px solid #dadee5;
+}
+.item .tit a{
+	float: right;
+	padding: 0px 10px;
+}
+.item .ler{
+	position: relative;
+	padding: 0px 15px;
+	border-bottom: 1px solid #e9ecf1;
+	padding-bottom: 9px;
+}
+.item .ler .img{
+	display: block;
+	width: 130rpx;
+	height: 130rpx;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.item .ler .img image{
+	display: block;
+	width: 130rpx;
+	height: 130rpx;
+	margin: 0px;
+}
+.item .ler .info{
+	height: 72px;
+	padding-top: 8px;
+	width: auto;
+	margin-left: 75px;
+	margin-right: 75px;
+}
+.item .ler .info p{
+	line-height: 26px;
+	height: 26px;
+	font-size: 14px;
+	color: #333333;
+	overflow: hidden;
+  display: block;
+}
+.item .ler .info span{
+	display: block; height: 20px;
+	line-height: 20px; font-size: 12px;
+	color: #fff; background: #7344dc;
+	float:left; margin-right: 10px; border-radius: 5px; padding-left: 5px;
+  padding-right: 5px;
+}
+.item .ler .price{
+	display: block;
+	width: 120rpx;
+	height: 70px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-align: right;
+	line-height: 35px;
+	font-size: 14px;
+}
+.item .ler .price p{
+  display: block;
+}
+.item .allprice{
+	height: 50px;
+	line-height: 50px;
+	padding: 0px 10px;
+	color: #666666;
+  font-size: 16px;
+} 
+ .item .allprice span{
+	color: #da351f;
+	font-size: 16px;
+}
+ .item .allprice button{
+	display: inline-block;
+	width: auto;
+	height: 30px;
+	float: right;
+	border:1px solid #fccf10;
+  background-color: #fccf10;
+	padding: 0px 20px;
+	font-size: 16px;
+	color: #fff;
+	line-height: 30px;
+	margin-top: 10px;
+	-moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+   border-radius:5px; 
+   margin-right: 5px;
+}
+ .item .allprice .warn{
+   border:1px solid #666;
+   color:#666;
+   background: #fff;
+ }

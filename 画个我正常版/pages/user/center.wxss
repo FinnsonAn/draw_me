@@ -1,0 +1,34 @@
+/* pages/user/center.wxss */
+.users{
+  width: 100%;height: 100vh;background-color: #fff;
+}
+.users .toper{
+  width: 90%;margin: 0 auto;height: 70px;border-bottom: 1px solid #ddd;
+}
+.users .toper image{
+  width: 40px;height: 40px;float: left;border-radius:50%;margin-top: 10px;
+}
+.users .toper text{
+  float:left;line-height: 60px;margin-left: 10px;font-weight: bold;color: #555;
+}
+.users .toper i{
+  float: right;line-height: 60px;font-size: 26px;color: #ccc;margin-right: 5px;
+}
+.users .menus{
+  width: 90%;margin: 0 auto;height: auto;
+}
+.users .menus .list{
+  width: 100%;height: 55px;margin-top: 10px; position: relative;
+}
+.users .menus .list image{
+  float: left;width: 25px;height: 25px;margin-top: 15px;
+}
+.users .menus .list text{
+  float: left;margin-left: 10px;line-height: 55px; color: #666;
+}
+.users .menus .list i{
+  float: right;line-height: 55px;font-size: 26px;color: #ccc;margin-right: 5px;
+}
+.users .menus .list button{
+  border: 0px; background: none; width: 750rpx; height: 55px; position: absolute; z-index: 999; top: 0px;
+}

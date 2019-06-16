@@ -1,0 +1,11 @@
+<!--detail.wxml-->
+<view class="container" style='background:#fff'>
+  <scroll-view class="scroll-view" scroll-y="false" style='background:#fff'>
+    <view class="detail-box">
+      <view class="datail">
+        <import src="/pages/templates/content.wxml" />
+        <template is="content" data="{{...article}}" />
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/goods/detail",
+    "pages/goods/buy",
+    "pages/goods/case",
+    "pages/user/apply",
+    "pages/user/center",
+    "pages/article/detail",
+    "pages/order/list",
+    "pages/order/detail",
+    "pages/order/confirm",
+    "pages/author/list",
+    "pages/author/detail",
+    "pages/order/comment"
+  ],
+"window": {
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "画个我",
+  "navigationBarBackgroundColor": "#fff",
+  "backgroundColor": "#f5f5f5",
+  "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#000",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "resource/icon/icon1.png",
+        "selectedIconPath": "resource/icon/icon1-sel.png",
+        "text": "画"
+      },
+      {
+        "pagePath": "pages/goods/case",
+        "iconPath": "resource/icon/icon2.png",
+        "selectedIconPath": "resource/icon/icon2-sel.png",
+        "text": "作品"
+      },
+      {
+        "pagePath": "pages/user/center",
+        "iconPath": "resource/icon/icon3.png",
+        "selectedIconPath": "resource/icon/icon3-sel.png",
+        "text": "我"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 20000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

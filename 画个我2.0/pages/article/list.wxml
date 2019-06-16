@@ -1,0 +1,16 @@
+<!--list.wxml-->
+<view class="container">
+  <scroll-view class="scroll-view" scroll-y="false" bindscrolltolower="pullDownRefresh">
+    <view class="title">
+      <text>{{catename}}</text>
+    </view>
+    <view class="list-box">
+    <block wx:for="{{list}}">
+      <view class="list-tit" bindtap="gotoDetail" data-id="{{item.id}}" >
+        <text>{{item.title}}</text>
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+      </view>
+    </block>  
+    </view>
+  </scroll-view>
+</view>

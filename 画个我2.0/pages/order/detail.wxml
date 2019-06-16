@@ -1,0 +1,57 @@
+<!--detail.wxml-->
+<view class="container">
+  <scroll-view class="scroll-view" scroll-y="false">
+    <view class="orderviewpage">
+      <view class="item oinfo">
+        <p>{{ordername}}编号：<span>{{order.ordersn}}</span></p>
+        <p>下单时间：<span>{{order.createtime_format}}</span></p>
+        <p>{{ordername}}状态：<span class="rd">{{order.statusstr}}</span></p>
+	    </view>
+
+      <view class="item pro clearfix">
+      <block wx:for="{{order.goods}}" wx:for-item="g">
+        <view class="ler">
+          <view class="img"><image src="{{g.thumb}}"/></view>
+          <view class="info">
+				    <p>{{g.title}}</p>
+				    <p>
+              <span>{{g.optiontitle}}</span>
+              <span wx:if="{{order.person > 1}}">{{order.pictype_str}}</span>
+            </p>
+			    </view>
+          <view class="price">
+				    <span>{{order.person}}人</span>
+				    <p class="gl-pricecolor">￥{{order.price}}</p>
+			    </view>
+        </view>
+      </block>  
+	    </view>
+
+      <view class="item uinfo">
+        <p><i class="fa fa-mobile"></i>{{order.mobile}}</p>
+        <p wx:if="{{order.remark != ''}}"><i class="fa fa-commenting-o"></i>{{order.remark}}</p>
+		    <p>
+        <block wx:for="{{order.upics}}" wx:for-item="pic">
+          <image src="{{pic}}" data-url="{{pic}}"  bindtap="showPic" data-index="{{index}}" class="upic" mode="widthFix"/>
+          </block>
+         </p>
+      </view>
+      
+      <view class="item uinfo" wx:if="{{order.author > 0}}">
+        <view class="tit">画师</view>
+        <p><i class="fa fa-user-o"></i>{{author.name}}</p>
+		    <p>
+        <block wx:for="{{order.uploads}}" wx:for-item="pic">
+          <image src="{{pic}}" data-url="{{pic}}" data-index="{{index}}" class="upic" mode="widthFix"/>
+          </block>
+         </p>
+	    </view>
+
+      <view class="acts">
+        <button type="warn"  bindtap="toHome">首页</button>
+        <button class="pay" wx:if="{{order.op.receive}}" bindtap="receive">确认收货</button>
+		    <button class="pay" wx:if="{{order.status>=2}}" bindtap="comment">查看作品</button>
+	    </view>
+    </view>
+  </scroll-view>
+</view>

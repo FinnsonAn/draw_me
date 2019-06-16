@@ -1,0 +1,129 @@
+/* pages/goods/buy.wxss */
+.shop_top{
+  width: 100%;height: auto;display: table;background-color: #fff;padding: 20px 0;
+}
+.shop_top image{
+  float: left;margin-left: 30rpx;width: 250rpx;height: 250rpx;
+}
+.shop_top .title{
+  float: left;margin-left: 40rpx;width: 400rpx;
+}
+.shop_top .title text{
+  display: block;font-size: 16px;font-weight: bold;color: #333;line-height: 80rpx;margin-top: 65rpx;
+}
+.shop_top .title span{
+  display: block;font-size: 12px;color: #999;line-height: 40rpx;
+}
+.options{
+  width: 100%;height: auto;background-color: #fff;padding: 10px 0;
+}
+.options span{
+  display: block;margin-left: 30rpx;font-size: 14px;font-weight: bold;color: #333;line-height: 50px;
+}
+.options .opitem {
+  width: 100%;height: auto;display: table;
+}
+.options .opitem text{
+  float: left;margin-left: 30rpx;width: 180rpx;height: 80rpx;border: 1px solid #ddd;line-height: 80rpx;text-align: center;font-size: 14px;color: #777;font-weight: bold; margin-bottom: 20rpx;
+}
+.options .opitem text.select{
+  background-color: #fccf10;color: #fff;
+} 
+.numbox{
+	display: block;
+	width: 146px;
+	height:36px;
+	margin-left: 20px;
+}
+.numbox a{
+	display: block;
+	width: 36px;
+	height: 36px;
+	float: left;
+	background: #f5f6f5;
+  line-height: 36px;text-align: center;
+}
+.numbox a:active{
+	background: #f0f0f0;
+}
+.numbox input{
+	display: block;
+	width: 70px;
+	margin: 0px 2px;
+	height: 36px;
+	float: left;
+	border:none;
+	background: #f5f6f5;
+	text-align: center;
+	font-size: 14px;
+	color: #666666;
+}
+.numbox a.mins{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 14px auto; 
+}
+.numbox a.plus{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 14px auto; 
+}
+.up_load{
+  width: 100%;height: auto;background-color: #fff;padding-bottom: 20px; display: table;
+}
+.up_load .title{
+  width: 100%; clear: both;
+}
+.up_load .title text{
+  display: block;margin-left: 30rpx;font-size: 14px;font-weight: bold;color: #333;line-height: 50px; float: left;
+} 
+.up_load .title span{ float: right; }
+.up_load .title span button{ 
+  height: 26px;background-color: #fff;border-radius: 5px; color: #666;    
+  width: auto;  text-align: center;
+  padding-left: 10px; padding-right: 10px; line-height: 26px; font-size: 14px; margin-top: 5px; margin-right: 5px;
+}
+.upcon{ width: 100%; clear: both;}
+.upcon .thumb{ width: 250rpx;height: 250rpx;margin-left: 30rpx;border: 1px solid #eee; float: left; margin-bottom: 20px;}
+.upcon .up_img{
+  width: 250rpx;height: 250rpx;margin-left: 30rpx;border: 1px solid #eee; float: left;
+}
+.upcon .up_img image{
+  width: 250rpx; height: 250rpx; background: #eee; float: left; margin-bottom: 20px;
+}
+.bz{
+  width: 100%;height: 50px;line-height: 50px;background-color: #fff; padding-right: 10px;
+}
+.bz text{
+  float: left;margin-left: 30rpx;font-size: 14px;font-weight: bold;color: #333; text-align: right;
+}
+.bz .input{
+  float: right;width: 65%;height: 38px;margin-top: 5px;
+}
+.bz .input input{
+  width: 90%;height: 38px;margin: 0 auto;line-height: 38px;font-size: 14px; text-align: right;  border: 1px solid #eee;
+}
+.phone{
+  width: 100%;height: 50px;line-height: 50px;background-color: #fff;
+}
+.phone text{
+  float: left;margin-left: 30rpx;font-size: 14px;font-weight: bold;color: #333;
+}
+.phone .number{
+  float: right;width: 65%;height: 38px;margin-top: 5px;margin-right: 30rpx;
+}
+.phone .number input{
+  width: 100%;height: 38px;margin: 0 auto;line-height: 38px;text-align: right;font-size: 14px;
+}
+.bottom_box{
+  width: 100%;height: 55px;border-top: 1px solid #eee;background-color: #fff;font-size: 16px;font-weight: bold;position: fixed;bottom: 0;z-index: 99999;
+}
+.bottom_box .price{
+  float: left;margin-left: 30rpx;line-height: 55px;color: #fa3d59;
+}
+.bottom_box .pay{
+  float: right;width: 40%;height: 55px;line-height: 55px;text-align: center;background-color: #7344dc; color: #fff;
+}
+.kg{
+  width: 100%;height: 56px;
+}

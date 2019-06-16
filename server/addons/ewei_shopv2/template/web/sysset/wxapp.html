@@ -1,0 +1,116 @@
+{template '_header'}
+
+<div class="page-heading"> <h2>商城设置</h2> </div>
+
+    <form action="" method="post" class="form-horizontal form-validate" enctype="multipart/form-data" >
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">小程序名称</label>
+                    <div class="col-sm-9 col-xs-12">
+                        {ifp 'system.wxapp.edit'}
+                        	<input type="text" name="data[name]" class="form-control" value="{$data['name']}" />
+                        {else}
+	                        <input type="hidden" name="data[name]" value="{$data['name']}"/>
+	                        <div class='form-control-static'>{$data['name']}</div>
+                        {/if}
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">小程序LOGO</label>
+                    <div class="col-sm-9 col-xs-12">
+                        {ifp 'system.wxapp.edit'}
+                        {php echo tpl_form_field_image('data[logo]', $data['logo'])}
+                        <span class='help-block'>正方型图片</span>
+                        {else}
+                        <input type="hidden" name="data[logo]" value="{$data['logo']}"/>
+                        {if !empty($data['logo'])}
+                        <a href='{php echo tomedia($data['logo'])}' target='_blank'>
+                           <img src="{php echo tomedia($data['logo'])}" style='width:100px;border:1px solid #ccc;padding:1px' />
+                        </a>
+                        {/if}
+                        {/if}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">小程序账号</label>
+                    <div class="col-sm-9 col-xs-12">
+                        {ifp 'system.wxapp.edit'}
+                        	<input type="text" name="data[account]" class="form-control" value="{$data['account']}" />
+                        {else}
+	                        <input type="hidden" name="data[account]" value="{$data['account']}"/>
+	                        <div class='form-control-static'>{$data['account']}</div>
+                        {/if}
+
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label class="col-sm-2 control-label">原始ID</label>
+                    <div class="col-sm-9 col-xs-12">
+                        {ifp 'system.wxapp.edit'}
+                        	<input type="text" name="data[original]" class="form-control" value="{$data['original']}" />
+                        {else}
+	                        <input type="hidden" name="data[original]" value="{$data['original']}"/>
+	                        <div class='form-control-static'>{$data['original']}</div>
+                        {/if}
+
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label class="col-sm-2 control-label">AppId</label>
+                    <div class="col-sm-9 col-xs-12">
+                        {ifp 'system.wxapp.edit'}
+                        	<input type="text" name="data[AppId]" class="form-control" value="{$data['AppId']}" />
+                        {else}
+	                        <input type="hidden" name="data[AppId]" value="{$data['AppId']}"/>
+	                        <div class='form-control-static'>{$data['AppId']}</div>
+                        {/if}
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">AppSecret</label>
+                    <div class="col-sm-9 col-xs-12">
+                        {ifp 'system.wxapp.edit'}
+                        	<input type="text" name="data[AppSecret]" class="form-control" value="{$data['AppSecret']}" />
+                        {else}
+	                        <input type="hidden" name="data[AppSecret]" value="{$data['AppSecret']}"/>
+	                        <div class='form-control-static'>{$data['AppSecret']}</div>
+                        {/if}
+
+                    </div>
+                </div>
+               <div class="form-group">
+                    <label class="col-sm-2 control-label">正式版本</label>
+                    <div class="col-sm-9 col-xs-12">
+                        {ifp 'system.wxapp.edit'}
+                        	<input type="text" name="data[version]" class="form-control" value="{$data['version']}" />
+                        {else}
+	                        <input type="hidden" name="data[version]" value="{$data['version']}"/>
+	                        <div class='form-control-static'>{$data['version']}</div>
+                        {/if}
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">测试版本</label>
+                    <div class="col-sm-9 col-xs-12">
+                        {ifp 'system.wxapp.edit'}
+                        	<input type="text" name="data[beta_version]" class="form-control" value="{$data['beta_version']}" />
+                        {else}
+	                        <input type="hidden" name="data[beta_version]" value="{$data['beta_version']}"/>
+	                        <div class='form-control-static'>{$data['beta_version']}</div>
+                        {/if}
+
+                    </div>
+                </div>
+            <div class="form-group">
+                    <label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-9 col-xs-12">
+                           {ifp 'system.wxapp.edit'}
+                            <input type="submit" value="提交" class="btn btn-primary"  />
+                          {/if}
+                     </div>
+            </div>
+    </form>
+ 
+{template '_footer'}

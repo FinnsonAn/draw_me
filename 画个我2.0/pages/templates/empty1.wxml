@@ -1,0 +1,6 @@
+<template name="empty1">
+  <view class="empty1">
+    <i class="fa fa-file-text-o fa-2x"></i>
+    <view><block wx:if="{{emptyMsg}}">{{emptyMsg}}</block><block wx:else>没有相关数据</block></view>
+  </view>
+</template>

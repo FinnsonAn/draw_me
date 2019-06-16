@@ -1,0 +1,46 @@
+/* pages/goods/eval.wxss */
+.top_b {
+  width: 100%;height: auto;background-color: #fff;display: table;padding-bottom: 15px;
+}
+.top_b .img{
+  width: 600rpx;height: 600rpx;margin: 0 auto;
+}
+.top_b .img image{
+  width: 600rpx;height: 600rpx;
+}
+.top_b .but{
+  width: 90%;height: 45px;margin: 0 auto;margin-top: 10px;
+}
+.top_b .but .btn1{
+  height: 45px;background-color: #fccf10;border-radius: 25px; color: #fff; border: none;
+}
+.top_b .but .btn2{
+  height: 45px;background-color: #7344dc;border-radius: 25px; color: #fff; border: none;
+}
+.bot_b{
+  width: 100%;height: auto;background-color: #fff;margin-top: 10px;
+}
+.bot_b .top{
+  width: 100%;height: 50px;line-height: 50px;
+}
+
+.bot_b .top view{
+  float: left;font-size: 14px;
+}
+.bot_b .top view i{
+  float: left;margin-left: 10rpx;line-height: 50px; color: #999; font-size: 18px;
+}
+.bot_b .top view i.co{
+  color: #feea17;
+}
+.bot_b .top span{
+  float: left;margin-left: 10px;color: #888;font-size: 14px;
+}
+.bot_b .top .lt{ width: 40%;}
+.bot_b .top .lt b{ border: 1px #7344dc solid; border-radius: 20px;  color: #7344dc; display: block; width: 70px; height: 26px; font-size: 16px; margin: 10px 5px; text-align:center; line-height: 26px; }
+.bot_b .e_l{
+  width: 90%;margin: 0 auto;height: 70px;
+}
+.bot_b .e_l input{
+  color: #333;font-size: 14px;
+}

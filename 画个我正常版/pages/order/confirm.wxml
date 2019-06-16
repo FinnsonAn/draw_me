@@ -1,0 +1,70 @@
+<!--pages/goods/buy.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit" report-submit='true'>
+  <scroll-view class="scroll-view" scroll-y="false">
+    <view class='shop_top'>
+      <image src='{{goods.thumb}}'></image>
+      <view class='title'>
+        <text>{{goods.title}}</text>
+        <span>{{goods.info}}</span>
+      </view>
+    </view>
+    <view class='options' wx:if="{{goods.max_person > 2}}">
+      <span>人数</span>
+      <view class='opitem'>
+        <view class='numbox'>
+          <a href="#here" class="mins" bindtap="mins" data-min="{{goods.min_person}}">-</a>
+          <input type="number" value="{{person}}" name="num" bindblur="listenNum" disabled='true'> </input>
+          <a href="#here" class="plus" bindtap="plus" data-max="{{goods.max_person}}">+</a>
+        </view>
+      </view>  
+    </view>
+    <view class='options' wx:if="{{goods.options.length > 0}}">
+      <span>设计尺寸</span>
+      <view class='opitem'>
+        <block wx:for="{{goods.options}}">
+          <text class="{{item.id == optionid ? 'select' : ''}}" bindtap="seloption" data-id="{{item.id}}">{{item.title}}</text>
+        </block>  
+      </view>  
+    </view>
+    <view class='options' wx:if="{{goods.min_person > 1}}">
+      <span>照片类型</span>
+      <view class='opitem'>
+        <text class="{{pictype == 1 ? 'select' : ''}}" bindtap='changePictype' data-val="1">合照</text>
+        <text class="{{pictype == 2 ? 'select' : ''}}" bindtap='changePictype' data-val="2">拼一起</text>
+      </view>  
+    </view>
+    <view class='up_load'>
+      <view class='title'>
+        <text>上传要画的照片</text> 
+        <span wx:if="{{pics.length > 0}}">
+          <button bindtap='remove'><i class="fa fa-close" /> 清空图片</button>
+          </span>
+      </view>
+      <view class='upcon'>
+        <block wx:for="{{pics}}" wx:for-item="pic">
+        <image src="{{pic}}" data-url="{{pic}}"  bindtap="showPic" class='widthFix' class="thumb"></image>
+        </block>
+        <view class='up_img'>
+          <image src='/resource/images/up_bg.jpg' bindtap="choosePic" ></image>
+        </view>
+      </view>
+    </view>
+    <view class='bz'>
+      <text>备注</text>
+      <view class='input'>
+        <input placeholder="例如：去掉特效" name="remark"/>
+      </view>
+    </view>
+    <view class='phone'>
+      <text>手机号码</text>
+      <view class='number'> <input placeholder="可不填" name="mobile"/> </view>
+    </view>  
+    <view class='bottom_box'>
+      <text class='price'>应付：¥{{price}}</text>
+      <button formType="submit" class="pay">提交订单</button>
+    </view>
+    <view class='kg'></view>
+  </scroll-view>  
+  </form>
+</view>

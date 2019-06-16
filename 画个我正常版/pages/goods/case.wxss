@@ -1,0 +1,41 @@
+/* pages/goods/goods.wxss */
+.cpage{
+  width: 100%;height: 100%;background-color: #fff;padding-bottom: 10rpx;
+}
+.cpage .tabs{
+  width: 100%;height: auto;background-color: #fff;padding-bottom: 10rpx; clear: both;
+}
+.cpage .cate{
+  width: 70rpx; height: 70rpx;text-align: center;line-height: 70rpx;background-color: #fff;color: #333;border-radius:50%;margin-left: 60rpx;font-size: 14px; float: left;
+}
+.cpage .active{ background-color: #642ccd !important; color: #fff !important;}
+.cpage .data-list{
+  width: 730rpx; clear: both;
+}
+.cpage .data-list .item{
+  width: 345rpx;height: 345rpx; margin-left: 20rpx; float: left; margin-top: 20px;
+}
+.cpage .data-list .item .date{
+  width:345rpx;height: 60rpx;text-align: center;font-size: 14px;line-height: 80rpx;color: #333;
+}
+.cpage .data-list .item .date text{
+  color: #000;font-size: 16px;
+}
+.cpage .data-list .item .pic_b{
+  width: 345rpx; height: 345rpx; position: relative;
+}
+.cpage .data-list .item .pic_b image{
+  width: 345rpx; height: 345rpx;
+}
+.cpage .data-list .item .pic_b .tit{
+  position: absolute;bottom: 0px;background-color: rgba(0, 0, 0, 0.5);width: 100%;padding: 5px 0; height: 70rpx;
+}
+.cpage .data-list .item .pic_b .tit span{
+  display: block;font-size: 12px;width: 92%;margin: 0 auto;line-height: 18px;
+}
+.cpage .data-list .item .pic_b .tit .name{
+  color: #ccc;
+}
+.cpage .data-list .item .pic_b .tit .detail{
+  color: #fff;
+}

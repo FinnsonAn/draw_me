@@ -1,0 +1,5 @@
+<template name="gotoindex">
+  <view class="gotoindex">
+    <button type='default' bindtap='goHome'>返回首页</button>
+  </view>
+</template>

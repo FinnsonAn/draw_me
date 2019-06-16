@@ -1,0 +1,19 @@
+<div style='max-height:500px;overflow:auto;min-width:550px;'>
+<table class="table table-hover" style="min-width:550px;">
+    <tbody>   
+        {loop $ds $row}
+        <tr>
+            <td>ID: {$row['id']}</td>
+            <td>{$row['name']}</td>
+            <td>{$row['mobile']}</td>
+            <td style="width:80px;"><a href="javascript:;" onclick='select_author({php echo json_encode($row);})'>选择</a></td>
+        </tr>
+        {/loop}
+        {if count($ds)<=0}
+        <tr> 
+            <td colspan='4' align='center'>未找到画师</td>
+        </tr>
+        {/if}
+    </tbody>
+</table>
+    </div>

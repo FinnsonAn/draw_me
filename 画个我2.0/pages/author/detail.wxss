@@ -1,0 +1,132 @@
+/* detail.wxss */
+.orderviewpage{
+	display: block;width: auto;height: auto;position: relative;
+}
+.orderviewpage .item{
+	display: block;width: auto;height: auto;margin-bottom: 7px;
+	background: #ffffff;
+}
+.orderviewpage .oinfo p{
+  display: block; width: 94%; margin: 0 auto;
+	height: 40px;line-height: 40px;border-bottom: 1px solid #eee;
+	font-size: 14px;color: #333333;padding: 0px 20px;
+}
+.orderviewpage .oinfo p span.rd{
+	color: #da351f;
+}
+.orderviewpage .uinfo p{
+  display: block;
+	line-height: 40px;	border-bottom: 1px solid #e9ecf1;
+	font-size: 14px;color: #333333;padding: 0px 20px;
+}
+.orderviewpage .uinfo p span{
+	padding: 10px 14px;	background: none;
+}
+.orderviewpage .uinfo p i{
+	color: #666;font-size: 20px;width: 20px;text-align: center;
+  margin-right: 10px;
+}
+.orderviewpage .uinfo .upic{
+  height: 150rpx; width: 150rpx; margin-right: 20rpx; border: 1px solid #eee; margin-top: 10px;
+}
+.orderviewpage .pro{
+	position: relative;	padding: 0px 14px;
+	border-bottom: 1px solid #e9ecf1; padding-bottom: 10px;
+}
+.orderviewpage .pro .tit{
+	display: block;	width: 100%;	height: 30px;	line-height: 30px;
+	text-align: left;	font-size: 14px;	padding: 0px 15px;	padding-top: 5px;
+	border-bottom: 1px solid #e9ecf1;
+}
+.orderviewpage .pro .ler{
+	position: relative;	padding: 0px 15px;
+	padding-bottom: 9px;
+}
+.orderviewpage .pro .ler .img{
+	display: block;	width: 70px;	height: 70px;	position: absolute;
+	top: 10px;	left: 0px;
+}
+.orderviewpage .pro .ler .img image{
+	display: block;	width: 70px;	height: 70px;	margin: 0px;
+}
+.orderviewpage .pro .ler .info{
+	height: 82px;	padding-top: 8px;	width: auto;	margin-left: 75px;
+	margin-right: 0px;
+}
+.orderviewpage .pro .ler .info p{
+	line-height: 20px;	height: 25px;	
+  font-size: 14px;	color: #333333;	overflow: hidden;
+  display: block;
+}
+.orderviewpage .pro .ler .info span{
+	display: block; width: auto; height: 20px;	line-height: 20px;
+	font-size: 12px;	color: #fff; background: #b46cda;
+	float:left; margin-right: 10px; border-radius: 5px; padding-left: 5px;
+  padding-right: 5px;
+}
+.orderviewpage .pro .ler .price{
+	display: block;width: 60px;height: 50px;position: absolute;
+	bottom: 0px;	right: 0px;	text-align: right;	overflow: hidden;
+}
+.orderviewpage .pro .ler .price span{
+	display: block;line-height: 25px;font-size: 14px;color: #999;
+}
+.orderviewpage .pro .ler .price p{
+	line-height: 25px;font-size: 16px;color: #333333;
+}
+.orderviewpage .pro .allprice{
+	height: 40px;line-height: 40px;border-top: 1px solid #e9ecf1;
+  color: #8c8c8c;font-size: 16px;
+}
+.orderviewpage .pro .allprice span{
+	color: #da351f;
+}
+.orderviewpage .pro{
+	margin-bottom: 0px;
+}
+.orderviewpage .zprice{
+	height: 50px;	line-height: 50px;	font-size: 16px;
+	text-align: right;	padding: 0px 10px;	margin-top: 7px;
+	margin-bottom: 7px;
+}
+.orderviewpage .zprice span{
+	color: #da351f;
+}
+.orderviewpage .acts{
+	display: block;width: auto;height: 50px;	text-align: right;
+	margin-bottom: 50px;
+}
+.orderviewpage .acts button{
+	 height: 45px;background-color: #7344dc;border-radius: 5px; color: #fff; border: none; width: 90%; margin: 0 auto; text-align: center; margin-top: 20px;
+}
+.orderviewpage .acts .default{
+  border: 1px #ccc solid; background: #fff; color: #666
+}
+.orderviewpage .total{
+  display: table; width: 100%; height: auto;
+  font-size: 14px;background: #fff; 
+  border-bottom: 1px solid #e9ecf1;padding-bottom: 5px;
+  line-height:30px; text-align:left; margin-top:8px; 
+}
+.orderviewpage .total .tit{ 
+  display: block; width: auto;height: 36px;
+  line-height: 30px;text-align: left; font-size: 14px;
+  padding: 0px 14px;padding-top: 5px;
+  border-bottom: 1px solid #e9ecf1; 
+}
+.orderviewpage .total .tit span{ float: right;}
+.orderviewpage .total .tit span button{ 
+  height: 26px;background-color: #fff;border-radius: 5px; color: #666;    
+  width: auto;  text-align: center;
+  padding-left: 10px; padding-right: 10px; line-height: 26px; font-size: 14px;
+}
+.item .upload{ display: table; width: auto; padding-left: 20px; padding-right: 20px; }
+.item .upload .picture{
+  width: auto; display: table; margin: 0 auto;
+  float: left;
+}
+.item .upload .picture image{
+  height: 150rpx; width: 150rpx; margin-right: 30rpx; border: 1px solid #eee; margin-top: 10px;
+}
+.item .upload .big{ font-size: 70px; color: #ccc; padding-top: 5px; }
+.item .upload span{ padding-left: 10px;}

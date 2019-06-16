@@ -1,0 +1,42 @@
+<!--pages/goods/buy.wxml-->
+<view class="container">
+  <scroll-view class="scroll-view" scroll-y="false">
+    <view class='shop_top'>
+      <image src='/resource/images/banner_buy.jpg'></image>
+      <view class='title'>
+        <text>女生区-梦幻Q版萌</text>
+        <span>单人1500像素X1500像素电子稿</span>
+      </view>
+    </view>
+    <view class='size_box'>
+      <span>设计尺寸</span>
+      <view class='size'>
+        <text class='select'>头像</text>
+        <text>全身</text>
+      </view>  
+    </view>
+    <view class='up_load'>
+      <text>上传美照</text>
+      <view class='up_img'>
+        <image src='/resource/images/up_bg.jpg'></image>
+      </view>
+    </view>
+    <view class='bz'>
+      <text>备个注吧</text>
+      <view class='in_put'>
+        <input placeholder="例如：我要变变变"></input>
+      </view>
+    </view>
+    <view class='phone'>
+      <text>通知号码</text>
+      <view class='number'>
+        <input placeholder="绘画结果将通过手机短信通知"></input>
+      </view>
+    </view>
+    <view class='bottom_box'>
+      <text class='price'>应付：¥16.80</text>
+      <text class='pay'>立即付款</text>
+    </view>
+    <view class='kg'></view>
+  </scroll-view>  
+</view>

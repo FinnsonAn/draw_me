@@ -1,0 +1,32 @@
+<!--pages/goods/goods.wxml-->
+<view class="container">
+  <scroll-view class="scroll-view" scroll-y="false" bindscrolltolower="pullDownRefresh">
+    <view class="cpage" >
+      <view class='tabs'>
+        <block wx:for="{{cates}}" wx:for-item="cate">
+        <view class="cate {{curId == cate.id ? 'active' : ''}}" bindtap='changeCate' data-id="{{cate.id}}">
+          <text>{{cate.name}}</text>
+        </view>
+        </block>
+      </view>
+
+      <view class="data-list">
+      <block wx:if="{{listLength > 0}}">
+        <view class="item" wx:for="{{list}}">  
+          <view class='pic_b' bindtap='showPic' data-url="{{item.thumb}}">
+            <image src="{{item.thumb}}" lazy-load="true" mode="aspectFill"/>
+            <view class='tit'>
+              <span class="name">{{setinfo.author}}-{{item.author ? item.author : '佚名'}}</span>
+              <span class="detail">{{item.title}}</span>
+            </view>
+          </view>  
+        </view>
+      </block>
+      <block wx:else>
+        <import src="/pages/templates/empty1.wxml" />
+        <template is="empty1" data="{{emptyMsg}}"/>
+      </block>  
+      </view>
+    </view>
+  </scroll-view>  
+</view>

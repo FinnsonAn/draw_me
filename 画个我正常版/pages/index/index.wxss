@@ -1,0 +1,75 @@
+.sea-box{
+  width: 100%;height:auto;position: relative; 
+}
+.cates{
+  width: auto;height: 130rpx; border-bottom: 1px solid #ddd;background-color: #fff; display: flex; white-space: nowrap; overflow-x: scroll; min-width: 750rpx;
+}
+.cates view{
+  line-height: 125rpx;font-size: 20px;padding: 0 25px 0 10px; color: #ccc; display: inline-block; 
+}
+.cates view.selected{
+  color: #232323;
+}
+.adver{
+  width: 100%;height: auto;display: table;background: #fff;border-bottom: 1px solid #ddd;
+}
+.adver .left{
+  float: left;padding: 20rpx 50rpx 20rpx 50rpx;width:260rpx;height: auto;
+}
+.adver .left image{
+  width:300rpx;height: 300rpx;
+}
+.adver .r-box{
+  float: left;width: 340rpx;position: relative;margin-top: 50px
+}
+.adver .r-box text{
+  display: block;font-size: 18px;color: #333;font-weight: bold;
+}
+.adver .r-box text{
+  display: block;font-size: 18px;color: #333;font-weight: bold;width: 100%;height: 25px;line-height: 25px;overflow: hidden;
+}
+.adver .r-box span{
+  display: block;font-size: 16px;color: #777;width: 100%;height: 25px;line-height: 25px;overflow: hidden;
+}
+.adver .r-box .price{
+  font-size: 16px;color: #777;width: 100%;height: 25px;line-height: 25px;overflow: hidden;
+}
+.adver .r-box .price i{
+  color: #e54b4d;
+}
+.adver .r-box .bq{
+  position: absolute;background-color: #fccf10;color: #fff;border-radius: 15px;padding: 0 10px;height: 25px;line-height: 25px;font-size: 14px;top: -35px;right: -10px;
+}
+.list-box{
+  width: 100%;height: auto;background-color: #fff;display: table;padding-bottom: 20rpx;
+}
+.list-box .pain{
+  width: 345rpx;height: auto;margin-left: 20rpx;box-shadow: 3px 3px 3px #ddd;margin-top: 20rpx;float: left;position: relative;
+}
+.list-box .pain .label{
+  position: absolute;height: 25px; color: #fff;border-radius: 13px;padding: 0 10px;top: 10px;right: 10px;font-size: 14px;line-height: 25px;
+}
+.list-box .pain .hot{
+  background-color: #7344dc;
+}
+.list-box .pain .new{
+  background-color: #966df1;
+}
+.list-box .pain image{
+  width: 345rpx;height: 345rpx;
+}
+.list-box .pain .subtit{
+  height: 30px;background-color: #e3d9f6;color: #534567;line-height: 30px;text-align: center;overflow: hidden;  font-size: 14px; position: absolute; z-index: 100; bottom: 60px; width: 100%; 
+}
+.list-box .pain .title{
+  font-size: 16px; height: 36px;line-height: 46px;width: 94%;margin: 0 auto;overflow: hidden; color: #000; margin-top: 10px;
+}
+.list-box .pain .price{
+  width: 94%;margin: 0 auto;overflow: hidden;height: 30px;line-height: 30px;
+}
+.list-box .pain .price text{
+  float: left;color: #e54b4d;font-size: 16px;
+}
+.list-box .pain .price span{
+  float: right;color: #c6c6c6;font-size: 14px;
+}
